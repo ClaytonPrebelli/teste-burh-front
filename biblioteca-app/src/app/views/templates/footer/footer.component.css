@@ -1,9 +1,14 @@
 .footer{
+    position: fixed;
+    bottom: 0;
     display: flex;
-    position:fixed;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    bottom:0;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right:15px;
+    padding-left:15px;
+    }
+    .clayton{
+       
+        font-weight: 300;
+        color:black;
     }
