@@ -1,6 +1,7 @@
 .sidenav{
     width: 200px;
     background-color: rgb(173, 172, 172);
+    box-shadow: 2px 2px 8px 2px rgb(31, 31, 31);
 }
 .sidenav i{
     padding-right: 10px;
@@ -8,4 +9,5 @@
 .content{
     padding: 16px;
     background-color: white;
+    padding-left: 26px;
 }

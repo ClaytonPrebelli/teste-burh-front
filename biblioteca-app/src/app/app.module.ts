@@ -10,7 +10,9 @@ import { MatListModule } from '@angular/material/list/';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './views/templates/footer/footer.component';
 import { NavbarComponent } from './views/templates/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component'
+import { HomeComponent } from './components/home/home.component';
+import { MatCardModule } from '@angular/material/card';
+import { ContatosComponent } from './components/contatos/contatos.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { HomeComponent } from './components/home/home.component'
     FooterComponent,
     NavbarComponent,
     HomeComponent,
+    ContatosComponent,
 
 
   ],
@@ -30,6 +33,7 @@ import { HomeComponent } from './components/home/home.component'
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatCardModule
     
   ],
   providers: [],
