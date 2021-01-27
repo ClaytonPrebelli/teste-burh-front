@@ -1,0 +1,18 @@
+.botao{
+    margin-bottom: 15px;
+}
+.card{
+    background-color: rgb(235, 235, 235);
+    justify-items: center;
+}
+.titulo > h1 {
+    text-align: center;
+}
+.linha_tit{
+    color: rgb(16, 60, 180);
+    margin-bottom:15px;
+}
+.icon_title{
+    margin-right: 15px;
+    
+}
