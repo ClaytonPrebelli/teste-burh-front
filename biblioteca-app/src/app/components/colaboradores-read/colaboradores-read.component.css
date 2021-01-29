@@ -1,0 +1,33 @@
+.card{
+    background-color: rgb(235, 235, 235);
+    justify-items: center;
+}
+.titulo > h1 {
+    text-align: center;
+}
+.linha_tit{
+    color: rgb(16, 60, 180);
+    margin-bottom:15px;
+}
+.icon_title{
+    margin-right: 15px;
+    
+}
+table{
+    width: 100%;
+}
+.see{
+    margin-right: 5px;
+}
+.see > i{
+    color: #2632d9;
+}
+.edit{
+    margin-right: 5px;
+}
+.edit > i{
+    color: #d9cd26;
+}
+.delete > i{
+    color:#e35e6b;
+}

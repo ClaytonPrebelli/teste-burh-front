@@ -1,8 +1,27 @@
+.card{
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+}
 .i{
     margin-right: 5px;
     
 }
 .botao{
     margin-right: 5px;
+    margin-bottom: 5px;
     
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.campo{
+    width: 40%;
+    
+       
 }

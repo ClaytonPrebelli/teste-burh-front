@@ -1,5 +1,5 @@
 export interface Colaborador{
-        id:number
+        _id?:null
         nome:string
         rg:string
         cpf:string

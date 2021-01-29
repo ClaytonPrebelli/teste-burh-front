@@ -9,21 +9,38 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ColaboradoresService {
-  url="http://crudcrud.com/api/2382338bfbab44bea4f2089b534e3f16/register"
-  constructor(private snackBar: MatSnackBar,private http: HttpClient) { }
+  baseUrl = "https://crudcrud.com/api/8c2d629671bc4fb881191bd8183b6e3b/Colaborador"
+  constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
-  showMessage(msg:string, isError:boolean=false): void {
-    this.snackBar.open(msg,'X',{
-    duration: 3000,
-    horizontalPosition:'right',
-    verticalPosition:"top"
+  showMessage(msg: string, isError: boolean = false): void {
+    this.snackBar.open(msg, 'X', {
+      duration: 3000,
+      horizontalPosition: 'right',
+      verticalPosition: "top"
     })
   }
-    create(colaborador:Colaborador): Observable<Colaborador>{
-      return this.http.post<Colaborador>(this.url,colaborador).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
-    }
-    errorHandler(e: any): Observable<any> {
-      this.showMessage('Erro de Banco de Dados', true)
-      return EMPTY
-    }
+  create(colaborador: Colaborador): Observable<Colaborador> {
+    return this.http.post<Colaborador>(this.baseUrl, colaborador).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
+  }
+  read(): Observable<Colaborador[]> {
+    return this.http.get<Colaborador[]>(this.baseUrl)
+  }
+  readById(_id: number): Observable<Colaborador> {
+    const url = `${this.baseUrl}/${_id}`
+    return this.http.get<Colaborador>(url).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
+  }
+  update(colaborador: Colaborador,): Observable<Colaborador> {
+    const url = `${this.baseUrl}/${colaborador._id}`
+    return this.http.put<Colaborador>(url, colaborador).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
+  }
+  delete(_id:number): Observable<Colaborador>{
+    const url = `${this.baseUrl}/${_id}`
+    return this.http.delete<Colaborador>(url).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
+  }
+
+
+  errorHandler(e: any): Observable<any> {
+    this.showMessage('Erro de Banco de Dados', true)
+    return EMPTY
+  }
 }
