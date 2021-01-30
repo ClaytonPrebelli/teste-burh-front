@@ -9,7 +9,7 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ColaboradoresService {
-  baseUrl = "https://crudcrud.com/api/8c2d629671bc4fb881191bd8183b6e3b/Colaborador"
+  baseUrl = "https://crudcrud.com/api/593c81bc54c4459bac76c3819b376664/Colaborador"
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string, isError: boolean = false): void {

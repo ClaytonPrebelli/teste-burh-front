@@ -25,11 +25,13 @@ export class ColaboradoresCriarComponent implements OnInit {
     vt: 0.00,
     salario: 0.00
   }
+  
 
 
   constructor(private router: Router, private colaboradoresService: ColaboradoresService, private activatedRoute: ActivatedRoute,) { }
-
+ 
   ngOnInit(): void {
+   
   }
   criaColaborador(): void {
     this.colaboradoresService.create(this.colaborador).subscribe(() => {

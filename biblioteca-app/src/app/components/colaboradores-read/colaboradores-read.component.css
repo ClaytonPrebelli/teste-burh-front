@@ -10,11 +10,14 @@
     margin-bottom:15px;
 }
 .icon_title{
-    margin-right: 15px;
-    
+    margin-right: 15px; 
+}
+.tabela{
+    border-radius:8px;
 }
 table{
     width: 100%;
+    
 }
 .see{
     margin-right: 5px;

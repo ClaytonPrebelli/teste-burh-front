@@ -26,6 +26,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { ColaboradoresReadComponent } from './components/colaboradores-read/colaboradores-read.component';
 import { CpfPipe } from './components/cpf.pipe';
+import { WhiteDirective } from './directives/white.directive';
+
 
 
 
@@ -43,6 +45,7 @@ import { CpfPipe } from './components/cpf.pipe';
     ColaboradoresCriarComponent,
     ColaboradoresReadComponent,
     CpfPipe,
+    WhiteDirective,
     
 
 
