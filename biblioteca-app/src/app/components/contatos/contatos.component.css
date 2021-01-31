@@ -1,0 +1,29 @@
+mat-card{
+    text-decoration: none;
+background-color: rgb(235, 235, 235);
+justify-content: center;
+margin: 51px auto 5px auto;
+text-align: center;
+}
+.icon_title{
+    margin-right: 15px; 
+}
+
+.card{
+    background-color: rgb(235, 235, 235);
+    padding-top:15px;
+padding-bottom:10px;
+}
+.linha_tit{
+    color: rgb(16, 60, 180);
+     
+}
+.links{
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.links > h1{
+    
+}

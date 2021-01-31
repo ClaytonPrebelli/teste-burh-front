@@ -1,0 +1,22 @@
+{
+  "name": "teste-burh-front",
+  "version": "1.0.0",
+  "description": "Cadastro de Livros de Clayton Prebelli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaytonPrebelli/teste-burh-front.git"
+  },
+  "author": "Clayton Prebelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaytonPrebelli/teste-burh-front/issues"
+  },
+  "homepage": "https://github.com/ClaytonPrebelli/teste-burh-front#readme",
+  "dependencies": {
+    "@angular/cli": "^11.1.1"
+  }
+}

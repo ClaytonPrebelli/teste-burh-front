@@ -1,0 +1,58 @@
+<button mat-raised-button color="primary" class="botao" (click)="criaColaborador()"><i
+        class="material-icons i">save</i>Salvar</button><button mat-raised-button class="botao" (click)="cancel()"><i
+        class="material-icons i">cancel</i>Cancelar</button>
+<mat-card class="card mat-elevation-z5">
+    <mat-card-title><span class="titulo">
+        <h1><i class="material-icons icon_title">
+            person_add
+        </i>Novo Colaborador</h1></span>
+    </mat-card-title>
+    <hr>
+    <section appWhite class="fundo mat-elevation-z5">
+    <form>
+        <mat-form-field class="campo">
+            <mat-label>Nome</mat-label>
+            <input matInput placeholder="Insira seu nome" [(ngModel)]="colaborador.nome" name="nome" required>
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>RG</mat-label>
+            <input matInput placeholder="Ex.: 00.000.000-0" required [(ngModel)]="colaborador.rg" name="rg">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>CPF</mat-label>
+            <input matInput required placeholder="000.000.000-00" [(ngModel)]="colaborador.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>Telefone</mat-label>
+            <input matInput required placeholder="(00) 00000-0000" [(ngModel)]="colaborador.telefone" name="telefone">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>E-mail</mat-label>
+            <input type="email" required matInput placeholder="example@example.com" [(ngModel)]="colaborador.email" name="email">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>Data Nascimento</mat-label>
+            <input type="date" required matInput placeholder="dd/mm/aaaa" [(ngModel)]="colaborador.nascimento" name="nascimento">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>Data Admissão</mat-label>
+            <input type="date" required matInput placeholder="dd/mm/aaaa" [(ngModel)]="colaborador.admissao" name="admissao">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>Cargo</mat-label>
+            <input matInput required placeholder="cargo" [(ngModel)]="colaborador.cargo" name="cargo">
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>VR</mat-label>             
+            <input matInput  required placeholder="v.r." [(ngModel)]="colaborador.vr" name="vr"><span  matPrefix>R$ &nbsp; </span>
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>VT</mat-label>
+            <input matInput required placeholder="v.t." [(ngModel)]="colaborador.vt" name="vt"><span  matPrefix>R$ &nbsp; </span>
+        </mat-form-field>
+        <mat-form-field class="campo">
+            <mat-label>Salário</mat-label>
+            <input matInput  required placeholder="salário" [(ngModel)]="colaborador.salario" name="salario"><span  matPrefix>R$ &nbsp; </span>
+        </mat-form-field>
+    </form>
+</section>
