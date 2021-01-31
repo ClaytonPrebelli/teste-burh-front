@@ -25,14 +25,14 @@
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef >Ações</th>
           <td mat-cell *matCellDef="let row">
-            <a routerLink="/colaboradores/see/{{row._id}}" class=see>
+            <a routerLink="/colaboradores/ver/{{row._id}}" class=see>
                 <i class="material-icons">visibility</i>
                 
               </a>
-            <a routerLink="/colaboradores/update/{{row._id}}" class=edit>
+            <a routerLink="/colaboradores/atualizar/{{row._id}}" class=edit>
               <i class="material-icons">edit</i></a>
             
-            <a routerLink="/colaboradores/delete/{{row._id}}" class="delete">
+            <a routerLink="/colaboradores/deletar/{{row._id}}" class="delete">
               <i class="material-icons">delete</i>
             </a>
           </td>

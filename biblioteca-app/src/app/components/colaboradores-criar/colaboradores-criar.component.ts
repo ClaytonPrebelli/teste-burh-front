@@ -12,7 +12,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ColaboradoresCriarComponent implements OnInit {
   colaborador: Colaborador = {
     
-    
     nome: '',
     rg: '',
     cpf: '',

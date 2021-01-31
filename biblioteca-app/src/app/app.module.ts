@@ -27,6 +27,9 @@ import { MatSortModule } from '@angular/material/sort';
 import { ColaboradoresReadComponent } from './components/colaboradores-read/colaboradores-read.component';
 import { CpfPipe } from './components/cpf.pipe';
 import { WhiteDirective } from './directives/white.directive';
+import { ColaboradoresVerComponent } from './components/colaboradores-ver/colaboradores-ver.component';
+import { ColaboradoresAtualizarComponent } from './components/colaboradores-atualizar/colaboradores-atualizar.component';
+import { ColaboradoresDeletarComponent } from './components/colaboradores-deletar/colaboradores-deletar.component';
 
 
 
@@ -46,6 +49,9 @@ import { WhiteDirective } from './directives/white.directive';
     ColaboradoresReadComponent,
     CpfPipe,
     WhiteDirective,
+    ColaboradoresVerComponent,
+    ColaboradoresAtualizarComponent,
+    ColaboradoresDeletarComponent,
     
 
 
