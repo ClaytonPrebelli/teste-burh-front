@@ -17,14 +17,13 @@ export class ColaboradoresAtualizarComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('_id')
     this.colaboradoresService.readById(id).subscribe(colaborador => {
       this.colaborador = colaborador
+      console.log(colaborador)
     });
   }
 
   atualizar(): void {
-    const id = this.route.snapshot.paramMap.get('_id')
-    console.log(this.colaborador._id)
-   this.colaboradoresService.update(this.colaborador._id).subscribe(() => {
-      this.colaboradoresService.showMessage('Colaborador Excluído com Sucesso!')
+   this.colaboradoresService.update(this.colaborador).subscribe(() => {
+      this.colaboradoresService.showMessage('Colaborador Atualizado com Sucesso!')
       this.router.navigate(['/colaboradores'])
     })
   }

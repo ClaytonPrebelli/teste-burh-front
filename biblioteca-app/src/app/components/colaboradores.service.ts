@@ -32,7 +32,7 @@ export class ColaboradoresService {
     return this.http.get<Colaborador>(url).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
   }
   update(colaborador: Colaborador): Observable<Colaborador> {
-    const url = `${this.baseUrl}/${colaborador}`
+    const url = `${this.baseUrl}/${colaborador._id}`
     console.log(url)   
     return this.http.put<Colaborador>(url, colaborador).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
   }
