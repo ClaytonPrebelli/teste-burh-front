@@ -1,4 +1,4 @@
 export const environment = {
-  production: true
-  apiUrl: "https://crudcrud.com/api/152a12e9128f4f18bb0477c8850a358b/Colaborador"
+  production: true,
+  apiUrl: "https://crudcrud.com/api/6823906849464982b30afdd89954c4d9/Colaborador"
 };

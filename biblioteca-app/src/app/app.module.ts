@@ -20,7 +20,7 @@ import { ColaboradoresCrudComponent } from './components/colaboradores-crud/cola
 import { ColaboradoresCriarComponent } from './components/colaboradores-criar/colaboradores-criar.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -76,6 +76,7 @@ import { ColaboradoresDeletarComponent } from './components/colaboradores-deleta
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    ReactiveFormsModule
     
     
 
