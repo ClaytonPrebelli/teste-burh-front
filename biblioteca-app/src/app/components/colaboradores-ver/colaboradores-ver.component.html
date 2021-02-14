@@ -11,19 +11,19 @@
 <form>
     <mat-form-field class="campo">
         <mat-label>Nome</mat-label>
-        <input matInput placeholder="Insira seu nome" [value]="colaborador.nome" name="nome" disabled>
+        <input matInput placeholder="Insira seu nome"  [value]="colaborador.nome" disabled>
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>RG</mat-label>
-        <input matInput placeholder="Ex.: 00.000.000-0" disabled [value]="colaborador.rg" name="rg">
+        <input matInput placeholder="Ex.: 00.000.000-0" [value]="colaborador.rg" [(ngModel)]="colaborador.rg" name="rg" mask="00.000.000-0" disabled>
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>CPF</mat-label>
-        <input matInput disabled placeholder="000.000.000-00" [value]="colaborador.cpf" name="cpf">
+        <input matInput placeholder="000.000.000-00" [value]="colaborador.cpf"  [(ngModel)]="colaborador.cpf" name="cpf" mask="000.000.000-00" disabled>
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>Telefone</mat-label>
-        <input matInput disabled placeholder="(00) 00000-0000" [value]="colaborador.telefone" name="telefone">
+        <input matInput placeholder="(00) 00000-0000" [value]="colaborador.telefone" [(ngModel)]="colaborador.telefone" name="telefone" mask="(00) 00000-0000" disabled>
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>E-mail</mat-label>
@@ -43,15 +43,15 @@
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>VR</mat-label>             
-        <input matInput  disabled placeholder="v.r." [value]="colaborador.vr" name="vr"><span  matPrefix>R$ &nbsp; </span>
+        <input matInput placeholder="v.r." [value]="colaborador.vr" [(ngModel)]="colaborador.vr" name="vr" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' , align:'left'}" disabled>
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>VT</mat-label>
-        <input matInput disabled placeholder="v.t." [value]="colaborador.vt" name="vt"><span  matPrefix>R$ &nbsp; </span>
+        <input matInput placeholder="v.t." [value]="colaborador.vt" [(ngModel)]="colaborador.vt"name="vt"  currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align:'left' }" disabled>
     </mat-form-field>
     <mat-form-field class="campo">
         <mat-label>Salário</mat-label>
-        <input matInput  disabled placeholder="salário" [value]="colaborador.salario" name="salario"><span  matPrefix>R$ &nbsp; </span>
+        <input matInput placeholder="salário" [value]="colaborador.salario" [(ngModel)]="colaborador.salario" name="salario" currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',', align:'left' }" disabled>
     </mat-form-field>
 </form>
 </section>

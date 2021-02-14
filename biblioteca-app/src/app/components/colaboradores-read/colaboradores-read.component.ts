@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./colaboradores-read.component.css']
 })
 export class ColaboradoresReadComponent implements OnInit {
-    colaboradores!: Colaborador[]
-    displayedColumns = ['nome', 'cpf', 'cargo', 'action']
+  colaboradores!: Colaborador[]
+    displayedColumns:string[] = ['nome', 'cpf', 'cargo', 'action']
   constructor(private colaboradoresService: ColaboradoresService) { }
 
   ngOnInit(): void {

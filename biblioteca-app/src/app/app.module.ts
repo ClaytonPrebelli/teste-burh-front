@@ -1,3 +1,6 @@
+import localePT  from '@angular/common/locales/pt';
+import { CurrencyMaskModule } from "ng2-currency-mask";
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 import { NgModule, Component, NgModuleDecorator, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,9 +33,13 @@ import { WhiteDirective } from './directives/white.directive';
 import { ColaboradoresVerComponent } from './components/colaboradores-ver/colaboradores-ver.component';
 import { ColaboradoresAtualizarComponent } from './components/colaboradores-atualizar/colaboradores-atualizar.component';
 import { ColaboradoresDeletarComponent } from './components/colaboradores-deletar/colaboradores-deletar.component';
+import {registerLocaleData } from '@angular/common'
 
+registerLocaleData(localePT);
 
-
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
 
 
 
@@ -76,7 +83,11 @@ import { ColaboradoresDeletarComponent } from './components/colaboradores-deleta
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMaskModule.forRoot(maskConfig),
+    CurrencyMaskModule
+    
+    
     
     
 
@@ -88,3 +99,4 @@ import { ColaboradoresDeletarComponent } from './components/colaboradores-deleta
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

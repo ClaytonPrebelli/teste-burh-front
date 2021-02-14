@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColaboradoresDeletarComponent implements OnInit {
   constructor(private colaboradoresService: ColaboradoresService, private router: Router, private route: ActivatedRoute) { }
-  colaborador!: Colaborador;
+  colaborador!: Colaborador
   ngOnInit(): void {    
     const id = this.route.snapshot.paramMap.get('_id')
     this.colaboradoresService.readById(id).subscribe(colaborador => {

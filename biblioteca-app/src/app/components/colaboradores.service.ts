@@ -24,17 +24,22 @@ export class ColaboradoresService {
     })
   }  
   create(colaborador: Colaborador): Observable<Colaborador> {
-    return this.http.post<Colaborador>(environment.apiUrl, colaborador).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
+    
+    return this.http.post<Colaborador>(`${environment.apiUrl}`, colaborador
+                         ).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
   }
-  read(): Observable<Colaborador[]> {
+
+   read(): Observable<Colaborador[]> {
+     console.log(this.http.get<Colaborador[]>(environment.apiUrl))
     return this.http.get<Colaborador[]>(environment.apiUrl)
   }
-  readById(_id: string | null): Observable<Colaborador> {
+  readById(_id: any): Observable<Colaborador> {
     const url = `${environment.apiUrl}/${_id}`
     return this.http.get<Colaborador>(url).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
   }
+
   update(colaborador: Colaborador): Observable<Colaborador>{
-    const url = `${environment.apiUrl}/`
+    const url = `${environment.apiUrl}/${colaborador._id}`
     console.log(colaborador._id)
     console.log(colaborador);
     return this.http.put<Colaborador>(url, colaborador).pipe(map((obj) => obj), catchError(e => this.errorHandler(e)))
