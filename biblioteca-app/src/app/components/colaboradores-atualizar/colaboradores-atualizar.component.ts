@@ -15,9 +15,9 @@ export class ColaboradoresAtualizarComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('_id')
+    
     this.colaboradoresService.readById(id).subscribe(colaborador => {
       this.colaborador = colaborador
-      console.log(colaborador)
     });
   }
 

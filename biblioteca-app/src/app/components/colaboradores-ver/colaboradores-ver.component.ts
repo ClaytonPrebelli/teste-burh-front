@@ -1,8 +1,10 @@
+import { NgxMaskModule } from 'ngx-mask';
 import { CpfPipe } from './../cpf.pipe';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ColaboradoresService } from './../colaboradores.service';
 import { Colaborador } from './../colaboradores.model';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-colaboradores-ver',

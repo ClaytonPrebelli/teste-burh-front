@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUlr: "https://crudcrud.com/api/152a12e9128f4f18bb0477c8850a358b/Colaborador"
+  apiUrl: "https://backendpreb.herokuapp.com/colaborador"
+  
 };
 
 /*
