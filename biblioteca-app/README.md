@@ -19,6 +19,7 @@ Foi feita em node.js e pode ser acessada e consumida em [APIPrebelli](https://ba
 
 A plataforma foi construída em Angular 9, e possibilita que sejam cadastrados, lidos, alterados e deletados colaboradores, com seus dados cadastrais básicos.
 A aplicação está hospedada e funcional em [Gerenciador de Recursos Humanos](https://prebelli.online/rh), sendo um ambiente seguro e certificado.
+Utilizadas máscaras para CPF, RG, Telefone e medidas monetárias com p NxgMasks e eo CurrencyMask.
 No ambiente próprio somente estão hospedados os arquivos "build" da dist. Código completo aqui no Git. 
 
 
