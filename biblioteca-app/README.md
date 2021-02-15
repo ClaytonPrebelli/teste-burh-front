@@ -31,4 +31,8 @@ Cursando Análise e Desenvolvimento de Sistemas, segundo semestre e estudante de
 [email](clayton@prebelli.online)
 
 
+## Utilização ##
 
+A interface é bem intuitiva. Ao clica em colaborador (ou segundo ícone do menu lateral, caso esteja em um dispositivo mobile), temos a tela de Colaboradores, onde é apresentada uma lista com dados resumidos dos colaboradores cadastrados. 
+O botão novo colaborador, abre a área de cadastro de um novo colaborador. 
+Na tela principal dos colaboradores, é possível clicar no ícone do "olho", para visualizar os dados completos, no "lápis" para editar os dados do colaborador selecionado e na "lixeira" para deletar o mesmo.
