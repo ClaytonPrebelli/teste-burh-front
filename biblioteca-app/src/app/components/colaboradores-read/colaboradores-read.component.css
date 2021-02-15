@@ -1,6 +1,7 @@
 .card{
     background-color: rgb(235, 235, 235);
     justify-items: center;
+    height: 98%;
 }
 .titulo > h1 {
     text-align: center;
@@ -17,7 +18,7 @@
 }
 table{
     width: 100%;
-    
+    padding: 0;
 }
 .see{
     margin-right: 5px;
@@ -33,4 +34,25 @@ table{
 }
 .delete > i{
     color:#e35e6b;
+}
+@media (max-width:468px){
+    .nome {
+        word-wrap: break-word !important;
+        
+      }
+      .see{
+        margin-right: 2px;
+    }
+    .see > i{
+        color: #2632d9;
+    }
+    .edit{
+        margin-right: 2px;
+    }
+    .edit > i{
+        color: #d9cd26;
+    }
+    .delete > i{
+        color:#e35e6b;
+    }
 }
