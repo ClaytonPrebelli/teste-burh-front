@@ -9,6 +9,7 @@
     z-index:15;
     box-shadow: 2px 2px 8px 2px rgb(31, 31, 31);
     }
+    
     .header a {
         color: #000;
     }
@@ -18,7 +19,7 @@
     text-decoration:none;
 }
 .header .logo{
-    max-height: 70px;
+    max-height: 60px;
     margin-left:45px;
     margin-right:50px;
     margin-top:5px;
@@ -32,4 +33,15 @@
 }
 .icon{
     margin-top:10px;
+}
+@media (max-width:468px){
+    .header{
+        font-size: 0.5rem;
+    }
+    .header .logo{
+        max-height: 45px;
+        margin-left:-10px;
+        margin-right:5px;
+        margin-top:5px;
+    }
 }

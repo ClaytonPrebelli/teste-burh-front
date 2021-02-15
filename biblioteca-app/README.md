@@ -1,27 +1,34 @@
-# BibliotecaApp
+# Bem vindo ao Gerenciador de Recursos Humanos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+## Sobre ##
 
-## Development server
+Sistema **Crud** feito em 
+- [x] Html5
+- [x] Css3
+- [x] Js
+- [x] Angular 9
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Backend ##
 
-## Code scaffolding
+Como sugestão, foi mencionada a plataforma crudcrud. Porém, pelo inconveniente de termos endpoints de somente 24hrs e 100 requisições máximas, optei por desenvolver a própria API e comunicação com banco de dados MySql.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A API pode ser encontrada no repósitório [Backend](https://github.com/ClaytonPrebelli/backend).
+Foi feita em node.js e express, hospedado na Heroku e pode ser acessada e consumida em [APIPrebelli](https://backendpreb.herokuapp.com/colaborador).
 
-## Build
+## FrontEnd ##
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+A plataforma foi construída em Angular 9, e possibilita que sejam cadastrados, lidos, alterados e deletados colaboradores, com seus dados cadastrais básicos.
+A aplicação está hospedada e funcional em [Gerenciador de Recursos Humanos](https://prebelli.online/rh), sendo um ambiente seguro e certificado.
+Utilizadas máscaras para CPF, RG, Telefone e medidas monetárias com p NxgMasks e eo CurrencyMask.
+No ambiente próprio somente estão hospedados os arquivos "build" da dist. Código completo aqui no Git. 
 
-## Running unit tests
+## Sobre Mim ##
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Cursando Análise e Desenvolvimento de Sistemas, segundo semestre e estudante de outras linguagens por iniciativa própria, me adequando sempre as necessidades e atualizando conhecimentos. 
+[LinkedIn](https://www.linkedin.com/in/clayton-prebelli/)
+[Página Pessoal](https://prebelli.online)
+[Whatsapp] (https://api.whatsapp.com/send?phone=5515981746903&text=Ol%C3%A1%20Clayton.%20Estou%20aqui%20a%20partir%20de%20seu%20projeto%20de%20FrontEnd!)15 99178-9945 / 15 98174-6903
+[email](clayton@prebelli.online)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
