@@ -22,5 +22,13 @@ A aplicação está hospedada e funcional em [Gerenciador de Recursos Humanos](h
 Utilizadas máscaras para CPF, RG, Telefone e medidas monetárias com p NxgMasks e eo CurrencyMask.
 No ambiente próprio somente estão hospedados os arquivos "build" da dist. Código completo aqui no Git. 
 
+## Sobre Mim ##
+
+Cursando Análise e Desenvolvimento de Sistemas, segundo semestre e estudante de outras linguagens por iniciativa própria, me adequando sempre as necessidades e atualizando conhecimentos. 
+[LinkedIn](https://www.linkedin.com/in/clayton-prebelli/)
+[Página Pessoal](https://prebelli.online)
+[Whatsapp] (https://api.whatsapp.com/send?phone=5515981746903&text=Ol%C3%A1%20Clayton.%20Estou%20aqui%20a%20partir%20de%20seu%20projeto%20de%20FrontEnd!)15 99178-9945 / 15 98174-6903
+[email](clayton@prebelli.online)
+
 
 
