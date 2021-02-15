@@ -1,52 +1,39 @@
-# BURH: Teste prático para Frontend
+# Bem vindo ao Gerenciador de Recursos Humanos
 
-Este será o teste usado para avaliar os candidatos a vaga de frontend Júnior/Pleno da [Burh](http://burh.com.br). Se você estiver participando de um processo seletivo para nossa equipe, certamente em algum momento receberá este link, mas caso você tenha chego aqui "por acaso", sinta-se convidado a desenvolver nosso teste e enviar uma mensagem para nós no e-mail `jorge@burh.com.br`. 
+## Sobre ##
 
-## Instruções
+Sistema **Crud** feito em 
+- [x] Html5
+- [x] Css3
+- [x] Js
+- [x] Angular 9
 
-Você deverá criar um `fork` deste projeto, e desenvolver em cima do seu fork. Use o *README* principal do seu repositório para nos contar como foi resolver seu teste, as decisões tomadas, como você organizou e separou seu código, e <b>principalmente</b> as instruções de como rodar seu projeto e o <b>seu link do perfil do Burh</b>, sem ele não conseguiremos te encontrar para passar o feedback.
+## Backend ##
 
-Lembre-se que este é um teste técnico e não um concurso público, portanto, não existe apenas uma resposta correta. Mostre que você é bom e nos impressione, mas não esqueça do objetivo do projeto. 
+Como sugestão, foi mencionada a plataforma crudcrud. Porém, pelo inconveniente de termos endpoints de somente 24hrs e 100 requisições máximas, optei por desenvolver a própria API e comunicação com banco de dados MySql.
 
-O desafio deverá ser concluído até o dia 11/01/2021 ao meio dia, só serão contabilizados commits até essa data.
+A API pode ser encontrada no repósitório [Backend](https://github.com/ClaytonPrebelli/backend).
+Foi feita em node.js e express, hospedado na Heroku e pode ser acessada e consumida em [APIPrebelli](https://backendpreb.herokuapp.com/colaborador).
 
-## O desafio
+## FrontEnd ##
 
-Você irá construir um crud sobre o que desejar, usando as [APIs do crducrud](https://crudcrud.com/) . O crud deverá ter campos dos tipos texto, numérico, data e booleano.
+A plataforma foi construída em Angular 9, e possibilita que sejam cadastrados, lidos, alterados e deletados colaboradores, com seus dados cadastrais básicos.
+A aplicação está hospedada e funcional em [Gerenciador de Recursos Humanos](https://prebelli.online/rh), sendo um ambiente seguro e certificado.
+Utilizadas máscaras para CPF, RG, Telefone e medidas monetárias com p NxgMasks e eo CurrencyMask.
+No ambiente próprio somente estão hospedados os arquivos "build" da dist. Código completo aqui no Git. 
 
-A interface fica por sua conta, use a criatividade, desenvolva algo bonito e usual.
+## Sobre Mim ##
 
-### O que nós esperamos do seu teste
+Cursando Análise e Desenvolvimento de Sistemas, segundo semestre e estudante de outras linguagens por iniciativa própria, me adequando sempre as necessidades e atualizando conhecimentos. 
+[LinkedIn](https://www.linkedin.com/in/clayton-prebelli/)
+[Página Pessoal](https://prebelli.online)
+[Whatsapp] (https://api.whatsapp.com/send?phone=5515981746903&text=Ol%C3%A1%20Clayton.%20Estou%20aqui%20a%20partir%20de%20seu%20projeto%20de%20FrontEnd!)15 99178-9945 / 15 98174-6903
+[email](clayton@prebelli.online)
 
-* Ver na solução a utilização do framework VueJS.
-* Tambér ver a utilização de dependency managers (npm, webpack)
-* Um HTML escrito da maneira mais semântica possível (HTML5/5.1)
-* CSS3/4 - Com um pré processador de CSS (a escolha fica a seu critério, mas por aqui utilizamos SASS)
-* Mobile first e layout responsivo
 
-### O que nós ficaríamos felizes de ver em seu teste
+## Utilização ##
 
-* Validação de campos e tratamento de erros
+A interface é bem intuitiva. Ao clica em colaborador (ou segundo ícone do menu lateral, caso esteja em um dispositivo mobile), temos a tela de Colaboradores, onde é apresentada uma lista com dados resumidos dos colaboradores cadastrados. 
+O botão novo colaborador, abre a área de cadastro de um novo colaborador. 
+Na tela principal dos colaboradores, é possível clicar no ícone do "olho", para visualizar os dados completos, no "lápis" para editar os dados do colaborador selecionado e na "lixeira" para deletar o mesmo.
 
-### O que nos impressionaria
-
-* [BEM naming convention](http://getbem.com/naming/)
-* Aplicação de animações em css quando possível e tome cuidado com a performance da sua animação :)
-* Ver o código rodando live (Bucket estático S3, Heroku, Firebase Hosting ou qualquer outro host)
-
-### O que nós não gostaríamos
-
-* Descobrir que não foi você quem fez seu teste
-* Ver commits grandes, sem muita explicação nas mensagens em seu repositório 
-* Encontrar um commit com as dependências de NPM
-
-## O que avaliaremos em seu teste
-
-* Histórico de commits do git
-* As instruções de como rodar o projeto
-* Organização, semântica, estrutura, legibilidade, manutenibilidade do seu código
-* Alcance dos objetivos propostos
-* Adaptação mobile (layout responsivo)
-* Componentização e extensibilidade dos componentes
-
-Boa sorte!
